@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* media Query CSS */
+
+@media only screen and (max-width:1260px){ /*//////////////////// max-width 1250px ////////////////////*/
+	
+	/* 사이트,로그인 박스 */
+	#sitelog>ul{ width: 90%; }
+	
+	/* 패밀리 사이트 박스 */
+/*	#sitelog>ul>li:first-child{ margin-left: 20px; }*/
+	
+	/* 로그인 박스 */
+/*	#sitelog>ul>li:last-child{ margin-right: 20px; }*/
+	
+	/* 로고 중단박스 */
+	#logobox>ul{ width: 90%; }
+	
+	/* 더보기 버튼*/
+/*	#logobox>ul>li:first-child{ margin-left: 20px;}*/
+	/* 검색 버튼 */
+/*	#logobox>ul>li:nth-child(2){ margin-left: 20px;}*/
+	
+	/* 메인 메뉴 */
+	#tmenu{ width: 100%; }
+	/* 메인 메뉴 폰트 사이즈 */
+	#tmenu>li{ font-size: 13px; }
+	/* 베스트 상품 */
+	#bestbox{ width: 1100px; }
+	/* 신상품 */
+	#newbox{ width: 1100px; height: 350px; }
+	#newbox>div { height: 288px; }
+	.newimg>a>img{ width: 100%; height: 250px; }
+	/* 세일상품 */
+	#offbox{ width: 1100px; }
+	#dsalebox { width: 100%; }
+	#dsalebox>ul { width: 1115px; }
+	#dsalebox>ul>li { padding: 0 7.5px; }
+} /*//////////////////// max-width 1250px ////////////////////*/
+
+
+@media only screen and (max-width:1150px){ /*//////////////////// max-width 1150px ////////////////////*/
+	
+	/* 상단 */
+	#sitelog>ul { width: 90%; }
+	#logobox>ul { width: 90%; }
+	#tmenu { width: 90%; }
+	
+	/* 서브메뉴 */
+	.smenu { width: 900px; padding: 0 30px; }
+	.smenu>li:first-child { font-size: 13px !important; }
+	.smenu>li:nth-child(2) { margin-left: 80px; font-size: 15px !important;}
+	.smenu>li:nth-child(2)>span { font-size: 12px !important; }
+	.smenu>li:last-child { width: 368px; height: 220px !important;  right: 30px;}
+	
+	.smenu2 { width: 900px; padding: 0 30px;}
+	.smenu2>li:first-child { width: 85px; font-size: 13px !important; }
+	.smenu2>li:nth-child(2) { width: 85px; font-size: 13px !important; }
+	.smenu2>li:nth-child(3) { font-size: 12px !important; margin-left: 30px; }
+	.smenu2>li:nth-child(3)>span { font-size: 12px !important; }
+	.smenu2>li:last-child { width: 368px; height: 220px !important; right: 30px; }
+	
+	.sbox { width: 100%; }
+	
+	/* 배너 */
+	.bantxt>p:first-child { font-size: 15px !important;}
+	.bantxt>p:nth-child(2) { font-size: 30px !important; }
+	.bantxt>p:nth-child(3) { font-size: 15px !important; }
+	#builetbox>li { height: 12px; }
+	
+	/* 베스트전체부모 */
+	#bestP { height: 684px !important } /*-100px*/
+	#bestbox { width: 900px; height: 484px; }
+	#bestbox>div { height: 422px !important; top: 62px; }
+	/*.bestimg:first-child { padding-top: 30px;}*/
+	.bestimg>a { height: 181px !important; }
+	.bestimg>a>img { height: 146.316px !important; }
+	
+	/* 뉴 */
+	#newA { height: 500px !important; }
+	#newbox { width: 900px; height: 300px; }
+	#newbox>div { height: 238px !important; }
+	#newitem { width: 2790px !important; height: 100%; }
+	.newimg>a>img { height: 200px !important; }
+	#bbtn>ul>li { width: 8px; height: 8px; }
+	
+	/* 세일상품 */
+	#dsaleP { height: 550px !important; }
+	#offbox { display: none; }
+	.swiper-offbox {display: block;}
+	
+	/* 한샘라이프 */
+	#hlife { height: 412px !important; }
+	#hlife>div { width: 900px; height: 217px; }
+	#lifebox { height: 155px; }
+	#lifebox>li { width: 435px; }
+	
+	/* 한샘리뷰 */
+	#hreview { height: 658px !important; }
+	#hrbox { width: 900px; height: 458px; }
+	#reviewbox { height: 396px; }
+	#reviewbox>li { height: 183px; }
+	#reviewbox>li:first-child::before { width: 217.5px; }
+	#reviewbox>li:last-child::before { width: 217.5px; }
+	#reviewbox>li:first-child>h1 { font-size: 13px; }
+	#reviewbox>li:first-child>h2 { font-size: 30px; }
+	.resmall{ width: 652.5px; }
+	.resmall>li { width: 197.5px; }
+	.resmall>li img { height: 100%; }
+	.resmall2{ width: 652.5px; }
+	.resmall2>li { width: 197.5px; }
+	.resmall2>li img { height: 100%; }
+	
+	/* 한샘아이콘 메뉴 */
+	#hicon>div { width: 900px; height: 187px; }
+	#iconbox li { width: 125px; margin-right: 100px; }
+	#iconbox a { height: 125px; }
+	
+	/* 카테고리 */
+	#hmenu>div { width: 900px; }
+	#hmbox>li { font-size: 12px; }
+	#hmbox>li:first-child { width: 415px; }	
+	#hmbox>li:nth-child(2) { width: 415px; }	
+	#hmbox>li:last-child { width: 70px; }
+	ol.camenu>li{ padding-left: 70px; }
+	ol.camenu>li>h1 { width: 70px; }
+	.camenu>li>a { font-family: notosanslight !important; color: #000 !important; }
+	
+	/* info-SNS아이콘 */
+	#infobox { width: 900px; }
+	/* 회사정보 */
+	#infocont { width: 900px; }
+	#infotxt>li { font-size: 11px !important; }
+	#hpshop { width: 450px; }
+	#hpshop>li { font-size: 11px !important; }
+	
+	
+} /*//////////////////// max-width 1150px ////////////////////*/
+
+
+@media only screen and (max-width:900px) {
+	
+	.category { font-size: 18px !important; }
+	
+	/* 상단 */
+	#sitelog>ul>li:last-child { display: none; }
+	/*#tmenu { display: none; } */
+	
+	/* 서브메뉴 */
+	.smenu { width: 600px; padding: 0px; }
+	.smenu>li:nth-child(2) { display: none; }
+	.smenu>li:last-child { right: 0; height: 180px !important; }
+	.smenu2 { width: 600px; padding: 0px; }
+	.smenu2>li:nth-child(3) { display: none; }
+	.smenu2>li:last-child { right: 0; height: 180px !important; }
+	
+	#top { height: 190px !important; box-shadow: none !important; border-bottom: none !important; }
+	#logobox { border-bottom: none !important; }
+	/* pc버전 탑메뉴 안보이기*/
+	#tmenu { display: none; }
+	/* 300px -> 250px */
+	/*#tmenu>li:first-child:hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(2):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(3):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(4):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(5):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(6):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(7):hover>.sbox{ height: 250px; }
+	#tmenu>li:nth-child(8):hover>.sbox{ height: 250px; }*/
+	
+	/* 모바일 탑메뉴 */
+	#mobtm { display: block !important; }
+	
+	/* 배너 */
+	.banimg>img { height: 120%; width: auto; }
+	.bantxt { width: 280px;  height: 250px; }
+	.bantxt>a { width: 130px; height: 30px; font-size: 12px;  line-height: 30px; border: 1px solid #fff; }
+	.bantxt>p:first-child { font-size: 12px !important; font-family: notosansThin;}
+	.bantxt>p:nth-child(2) { font-size: 20px !important; }
+	.bantxt>p:nth-child(3) { font-size: 12px !important; }
+	#builetbox>li { height: 12px; }
+	
+	/* 베스트 영역 */
+	#bestP { height: 584px !important; }
+	#bestbox { width: 650px; height: 484px; margin-top: 20px; }
+	.bestimg>a { width: 50%; }
+	.bestimg>a:nth-child(2) { padding-left: 15px; padding-right: 0;}
+	.bestimg>a:last-child { display: none; }
+	
+	/* 뉴 */
+	#newA { height: 450px !important; }
+	#newbox { width: 650px; }
+	#newitem { width: 2040px !important; height: 100%; }
+	.newimg>a:last-child { display: none; }
+	#bbtn { bottom: 30px !important; }
+	
+	/* 세일 */
+	#dsaleP{ height: 462px !important; }
+	.swiper-offbox { width: 650px;}
+	
+	/* 한샘라이프 */
+	#hlife { height: 200px !important; background-color: #eedece !important; box-shadow: none !important; }
+	#hlife>div { width: 100%; height: 100%; }
+	#hlife>div>h1 { display: none; }
+	#lifebox { top: 50%; transform: translateY(-50%); }
+	#lifebox>li:first-child { width: 100%; left: 50%; transform: translateX(-50%); margin: 0; }
+	#lifebox>li:first-child>a { background: url(../image/lifeban.png) no-repeat center/cover; left: 50%; transform: translateX(-50%); width: 90%; }
+	#lifebox>li:last-child { display: none; }
+	
+	/* 한샘리뷰 */
+	#hreview { height: 608px !important; background-color: #f6f6f6 !important; box-shadow: 0 7px 20px #ededed inset, 0 -7px 20px #f1f1f1 inset; border: none !important; }
+	#hrbox { display: none; }
+/*	#mobrbox { display: block; }
+	#mobrbox>ul { width: 250%; }
+	#mobrbox>h1 { left: 50%; transform: translateX(-50%); text-align: center; }*/
+	.swiper-container { display: block !important; width: 100%; top: 50%; transform: translateY(-50%); height: 70%; }
+	
+	/* 한샘 아이콘 메뉴 */
+	#hicon { height: 287px !important; border: none !important; }
+	#hicon>div { width: 600px; height: 157px; padding: 0; }
+	#iconbox li { width: 100px; margin-right: 66.6666667px; }
+	#iconbox a { height: 100px; }
+	
+	/* 한샘 카테고리 */
+	#hmenu { display: none; }
+	
+	/* info-SNS아이콘 */
+	#infobox { width: 600px; height: 100px!important; }
+	#infobox>div { right: auto; left: 50%; transform: translate(-50%,-50%); }
+	#infobox>div>a { margin: 0 20px; }
+	#info::before { top: 100px !important; }
+	/* 회사정보 */
+	#infocont { width: 600px; }
+	#infotxt>li { text-align: center;  font-size: 11px !important; }
+	#infocont>div:first-child { width: 100%; padding: 0; }
+	#infocont>div:first-child>a { width: 180px; left: 50%; transform: translateX(-50%); }
+	#infocont>div:first-child>a>img { width: 180px; }
+	#infocont>div:last-child { display: none; }
+	
+} /*//////////////////// max-width 900px ////////////////////*/
+
+
+@media only screen and (max-width:770px) {
+	.swiper-img>img { width: 110%; }
+}
+
+
+@media only screen and (max-width:500px) {
+	
+	/* 탑영역 */
+	#top { height: 100px !important; box-shadow: none !important; border: none !important; }
+	#sitelog { display: none; }
+	#logobox { border: none !important; top: 50%; transform: translateY(-50%); height: 100px; }
+	#logobox>ul { width: 100%; }
+	#logobox>ul>li:last-child { width: 150px; }
+	#tmenu { display: none; }
+	.plusm { margin-left: 20px; width: 20px!important; height: 20px!important; }
+	#search { left: auto !important; right: 0; margin-right: 20px; width: 20px!important; height: 20px!important; z-index: 11; }
+	
+	/* 모바일 상품영역 */
+	#mobP { display: block !important; }
+	#mobsale { display: block !important }
+	
+	/* 배너 */
+	#banner { display: none;}
+	#banbox>li:last-child>div>p:nth-child(3) { display: block !important; }
+	
+	.banimg>img { height: 100%; width: auto; }
+	.bantxt { height: auto !important; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+	.bantxt p { display: none; }
+	.bantxt>a { display: none; }
+	#builetbox>li { height: 10px; }
+
+	/* 베스트,신상품,세일품 사라지기 */
+	#bestP,#newA,#dsaleP,#hlife { display: none; }
+	
+	/* 한샘라이프 */
+	#hlife { height: 150px !important; }
+	#hlife>div { width: 100%; }
+	#lifebox { height: 80%; }
+	#lifebox>li:first-child>a { width: 100%; }
+
+	/* 한샘리뷰 */
+	.swiper-img::before,.swiper-img>p { display: none; }
+	.swiper-txt { height: 50%;}
+	.swiper-img { height: 50%;}
+	.swiper-txt>a:first-child { margin-top: 20px;}
+	.swiper-txt>a:last-child { margin-top: 10px;}
+	.swiper-txt>a:first-child>span{ display: inline-block; float: left;  }
+	.swiper-txt>a:first-child>p:nth-child(2) {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+		margin: 0;
+		font-family: notosansbold;
+		padding-left: 10px;
+		overflow: hidden;/*1. 넘치는 자식요소 숨기기*/
+		text-overflow: ellipsis;/*2. 말줄임표시 설정*/
+		display: -webkit-box;/*여러줄 생략처리 속성-크롬,사파리 브라우저용*/
+		-webkit-line-clamp: 1;/*처리할 줄수 셋팅속성*/
+		-webkit-box-orient: vertical;
+	}
+	.swiper-txt>a:first-child>p:last-child{ display: block;font-size: 15px;margin-top: 20px;font-family: spoqaR; color: #000; }
+	
+	/* 한샘아이콘 */
+	#hicon { height: 140px !important; border: none !important; }
+	#hicon>div { width: 335.5px; height: 80px; padding: 0; }
+	#iconbox li { width: 60px; margin-right: 31.5px; }
+	#iconbox a { height: 60px; }
+	#iconbox h1 { font-size: 10px; font-family: notosansLight; }
+
+	/* 회사 정보 */
+	/* 인스타,페북,블로그 아이콘 */
+	#infobox { width: 300px; height: 100px!important; }
+	#infobox>div { width: 100%; text-align: center; }
+	
+	/* 회사 정보 글 */
+	#info { height: 350px !important; }
+	#infocont { width: 300px;  top: 30px; }
+	#infotxt>li { text-align: center;  font-size: 11px !important; height: auto;  }
+	#infotxt>li:nth-child(2) { display: none; }
+	#infotxt>li:nth-child(3) { display: none; }
+	#infotxt>li:last-child { margin-top: 30px; }
+	#infotxt>li>a { padding: 0 15px; }
+	#infocont>div:first-child { width: 100%; padding: 0; height: 100px;  }
+	#infocont>div:first-child>a { display: none; }
+	
+	/* 모바일 회사정보 */
+	#info>nav { display: block; }
+	
+	/* 모바일 GNB */
+	#mobgnb { width: 300px !important; }
+	#mgnbbox { padding-top: 30px; padding-left: 30px; }
+	#mgnbbox>li { margin-bottom: 0; }
+	#mgnbbox>li:nth-child(3) { margin-bottom: 30px; }
+	.mbicon { left: 220px; }
+	
+	#mobNB,#mobsale,#mobbanner,#mobcont { display: block !important; }
+	
+}
+
+
+
+@media only screen and (max-width:430px){
+	
+	.swiper-mobbanner>div>div>img{
+		position: absolute;
+		height: 100%;
+		width: auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,203 @@
+@charset "utf-8";
+/*  공통 css */
+
+@font-face{
+	font-family: notosansblack;
+	font-weight: 600;
+	src: url(../font/NotoSans-Black.eot) format("eot"),
+		 url(../font/NotoSans-Black.otf) format("otf"),
+		 url(../font/NotoSans-Black.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: notosansbold;
+	font-weight: 500;
+	src: url(../font/NotoSans-Bold.eot) format("eot"),
+		 url(../font/NotoSans-Bold.otf) format("otf"),
+		 url(../font/NotoSans-Bold.ttf) format("ttf"),
+		 url(../font/NotoSans-Bold.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: notosansdel;
+	font-weight: 300;
+	src: url(../font/NotoSans-DemiLight.eot) format("eot"),
+		 url(../font/NotoSans-DemiLight.otf) format("otf"),
+		 url(../font/NotoSans-DemiLight.ttf) format("ttf"),
+		 url(../font/NotoSans-DemiLight.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: notosansR;
+	font-weight: 400;
+	src: url(../font/NotoSans-Regular.eot) format("eot"),
+		 url(../font/NotoSans-Regular.otf) format("otf"),
+		 url(../font/NotoSans-Regular.ttf) format("ttf"),
+		 url(../font/NotoSans-Regular.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: notosansLight;
+	font-weight: 200;
+	src: url(../font/NotoSans-Light.eot) format("eot"),
+		 url(../font/NotoSans-Light.otf) format("otf"),
+		 url(../font/NotoSans-Light.ttf) format("ttf"),
+		 url(../font/NotoSans-Light.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: notosansThin;
+	font-weight: 100;
+	src: url(../font/NotoSans-Thin.eot) format("eot"),
+		 url(../font/NotoSans-Thin.otf) format("otf"),
+		 url(../font/NotoSans-Thin.ttf) format("ttf"),
+		 url(../font/NotoSans-Thin.woff) format("woff");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: spoqaB;
+	font-weight: 400;
+	src: url(../font/SpoqaHanSansBold.ttf) format("ttf"),
+		 url(../font/SpoqaHanSansBold.woff) format("woff"),
+		 url(../font/SpoqaHanSansBold.woff2) format("woff2");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: spoqaR;
+	font-weight: 300;
+	src: url(../font/SpoqaHanSansRegular.ttf) format("ttf"),
+		 url(../font/SpoqaHanSansRegular.woff) format("woff"),
+		 url(../font/SpoqaHanSansRegular.woff2) format("woff2");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: spoqaL;
+	font-weight: 200;
+	src: url(../font/SpoqaHanSansLight.ttf) format("ttf"),
+		 url(../font/SpoqaHanSansLight.woff) format("woff"),
+		 url(../font/SpoqaHanSansLight.woff2) format("woff2");
+}/*/////////////////////////////////////////////////////////*/
+
+@font-face{
+	font-family: spoqaT;
+	font-weight: 100;
+	src: url(../font/SpoqaHanSansThin.ttf) format("ttf"),
+		 url(../font/SpoqaHanSansThin.woff) format("woff"),
+		 url(../font/SpoqaHanSansThin.woff2) format("woff2");
+}/*/////////////////////////////////////////////////////////*/
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-family: notosansdel;
+	font-size: 12px;/*글자크기 기본은 16px(=12pt)*/
+	letter-spacing: -.5;/*글자간격(기본값은 0)*/
+	z-index: -2;
+	overflow-x: hidden;
+}
+
+/*body::-webkit-scrollbar {크롬, 사파리
+  width: 5px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+body{ ie용 스크롤바 CSS
+	scrollbar-face-color: #333;
+    scrollbar-shadow-color: #000;
+    scrollbar-highlight-color: #666;
+    scrollbar-3dlight-color: #fff;
+    scrollbar-darkshadow-color: #fff;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #868686;
+}*/
+
+img{
+	border: none;/*이미지 링크시 보더 없앰.*/
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+a{
+	color: #222;
+	text-decoration: none;
+}
+
+ul,ol,dl{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	width: auto;
+	font-size: 100%;/*html 기본 font 크기 설정(16px)*/
+	font-weight: normal;
+}
+
+/*.clb는 clear:both가 필요한 요소에 class로 추가함*/
+ul::after, ol::after, .clb::after{/*float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+li{/*옆으로 흐르게*/
+	float: left;
+}
+
+.blind{/*IR(Image Replacement)*/
+	display: none;
+}
+
+img{
+	border: none;
+}
+
+.bold{
+	font-weight: bold;
+	color: #000 !important;
+}
+
+
+.opaview, .opaview2{
+	opacity: 1 !important;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.listEft>a{
+	font-size: 1.1em;
+	color: yellow !important;
+}
+
+
+/*태그 초기화 설정*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
+menu,nav,section,summary,time,mark,audio,video,button{margin:0; padding:0;}
+
+/*HTML5 새로운 태그들 이전 브라우저에서 block으로 해석되게 셋팅*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {  display: block; }
+
+

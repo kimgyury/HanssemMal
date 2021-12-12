@@ -1,0 +1,2173 @@
+@charset "utf-8";
+/* 2차 포트폴리오 - core.css */
+/* 스와이프 CSS*/
+/*///////////////// 모바일 버전 배너 영역 /////////////////////*/
+.swiper-mobbanner{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.swiper-mobbanner>div>div{
+	width: 100%;
+	height: 100%;
+}
+.swiper-mobbanner>div>div>img{
+	position: absolute;
+	width: 100%;
+}
+.swiper-mobbanner>div>div>a{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	transform: translateY(-30%);
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+.swiper-mobbanner>div>div>a>p:nth-child(1){
+	font-size: 1.5em;
+	padding: 10px 0;
+	font-family: notosansL;
+	text-shadow: 1px 1px 3px #333;
+	color: #fff;
+}
+.swiper-mobbanner>div>div>a>p:nth-child(2){
+	font-size: 3em;
+	line-height: 50px;
+	padding: 10px 0;
+	font-family: spoqaR;
+	text-shadow: 1px 1px 3px #333;
+	color: #fff;
+}
+
+/*///////////////// 모바일 베스트, 신상 상품 //////////////////*/
+#mobtab{
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+}
+#mobtab>a{
+	flex: 1;
+	position: relative;
+	display: block;
+	width: 50%;
+	height: 100%;
+	font-family: notosansL;
+}
+#mobtab>a:first-child::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 32px;
+	background-color: #666;
+}
+#mobtab>a>span{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 30px;
+	font-family: notosansL;
+	width: 150px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid #333;
+	
+}
+
+.seltab>span{ 
+	background-color: #333 !important;
+	color: #fff !important;
+}
+
+/*베스트 영역*/
+.swiper-mobitem{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.swiper-mobitem>div{
+	position: absolute;
+}
+.bslideimg{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bslideimg>span:nth-child(1){
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	top: 30px;
+	left: 50px;
+	background-color: #000;
+	color: #fff;
+	font-size: 0.9em;
+	font-family: notosansL;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.bslideimg>span:nth-child(2){
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	top: 55px;
+	left: 50px;
+	background-color: #319694;
+	color: #fff;
+	z-index: 1;
+	font-size: 0.9em;
+	font-family: notosansL;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.bslideimg>img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+.bslideimg>p{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+}
+.besttit{
+	bottom: 100px;
+	font-family: notosansR;
+}
+.bslideimg>p:last-child{
+	bottom: 70px;
+	font-family: notosansdel;
+	color: #666;
+}
+/*블릿버튼*/
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 20px !important;
+}
+.swiper-pagination-bullet-active {
+	background-color: #333 !important;
+}
+/*////////////////// 모바일 신상품 영역 ////////////////////////*/
+.swiper-mobnew{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.swiper-mobnew>div{
+	position: absolute;
+}
+.nslideimg{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nslideimg>span:nth-child(1){
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	top: 30px;
+	left: 50px;
+	background-color: #000;
+	color: #fff;
+	font-size: 0.9em;
+	font-family: notosansL;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.nslideimg>span:nth-child(2){
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	top: 55px;
+	left: 50px;
+	background-color: #319694;
+	color: #fff;
+	z-index: 1;
+	font-size: 0.9em;
+	font-family: notosansL;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.nslideimg>img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+.nslideimg>p{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;	
+}
+.newtit{
+	bottom: 100px;
+	font-family: notosansR;
+}
+.nslideimg>p:last-child{
+	bottom: 70px;
+	font-family: notosansdel;
+	color: #666;
+}
+/*///////////////// 모바일 디스플레이 상품 //////////////////*/
+#mobsale>h1{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	font-family: notosansdel;
+	font-size: 1.3em;
+}
+.swiper-display{ 
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.msalebox{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.msalebox>span{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 60px;
+	left: 50px;
+	background-color: #666;
+	color: #fff;
+	font-size: 1em;
+	font-family: notosansL;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	z-index: 1;
+}
+.msalebox>img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+.msalebox>p{
+	position: absolute;
+	bottom: 90px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+}
+.msalebox>p:nth-child(3){
+	bottom: 120px;
+	font-family: notosansR;
+}
+.msalebox>p:nth-child(4){
+	font-family: notosansdel;
+	color: #aaa;
+}
+.msalebox>p:last-child{
+	bottom: 70px;
+	font-family: notosansdel;
+	color: #333;
+}
+
+/*//////////////////// 모바일 리뷰 /////////////////*/
+.swiper-container>h1{
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	font-family: notosansLight;
+}
+.swiper-img{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	overflow: hidden;
+}
+.swiper-img::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	opacity: .5;
+	z-index: 1;
+}
+.swiper-img>p{
+	position: absolute;
+	display: block;
+	left: 20px;
+	bottom: 12px;
+	color: #fff;
+	z-index: 2;
+	font-size: 15px;
+	font-family: notosansLight;
+}
+.swiper-img>img{
+	position: absolute;
+	width: 100%;
+}
+/* 리뷰 텍스트 */
+.swiper-txt{
+	position: relative;
+	width: 100%;
+	height: 40%;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.swiper-txt>a:first-child{
+	display: block;
+	width: 100%;
+	height: 80px;
+	font-family: notosansR;
+}
+.swiper-txt>a:first-child>span{
+	display: block;
+	width: 50px;
+	height: 20px;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	font-family: notosansR;
+}
+.swiper-txt>a:first-child>p:nth-child(2){
+	display: block;
+	font-size: 15px;
+	margin-top: 20px;
+	font-family: notosansR;
+}
+.swiper-txt>a:first-child>p:last-child{
+	display: none;
+}
+.swiper-txt>a:last-child{
+	width: 100%;
+	color: #666;
+	font-size: 15px;
+	overflow: hidden;/*1. 넘치는 자식요소 숨기기*/
+	text-overflow: ellipsis;/*2. 말줄임표시 설정*/
+	display: -webkit-box;/*여러줄 생략처리 속성-크롬,사파리 브라우저용*/
+	-webkit-line-clamp: 2;/*처리할 줄수 셋팅속성*/
+	-webkit-box-orient: vertical;
+	font-family: spoqaR;
+}
+
+/* 공통 css */
+/* 제목 넣기 */
+.category{
+	position: absolute;
+	width: 400px;
+	top: 0;
+	line-height: 17px;
+	color: #333;
+	font-size: 22px;
+	font-family: notosansLight;
+}
+/* 모바일 GNB 메뉴 영역*/
+.mbmenu{
+	position: relative;
+	top: 30%;
+	transform: translateY(-30%);
+	width: 100%;
+	height: 70%;
+	/*outline: 1px solid red;*/
+}
+/*닫기버튼*/
+.mbmenu>a{
+	position: absolute;
+	top: -40px;
+	right: 0;
+	width: 25px;
+	height: 25px;
+}
+.mbmenu>a>img{
+	width: 24px;
+	height: 21px;
+}
+/* 모바일 GNB 메뉴 */
+#mgnbbox{
+	width: 100%;
+	height: 100%;
+	padding: 50px 0 0 100px;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+#mgnbbox>li{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	margin-bottom: 30px;
+	font-family: notosansBold;
+}
+#mgnbbox>li>a{
+	color: #666;
+}
+#mgnbbox>li:first-child{
+	height: 50px;/*235px;*/
+	overflow: hidden;
+}
+#mgnbbox>li:nth-child(3){
+	margin-bottom: 50px;
+}
+/* li클릭시 색 변경 class */
+.mgnbC>a{
+	color: #000 !important;
+}
+#mgnbbox a:hover{
+	color: #000 !important;
+}
+/* 로그인, A/S센터, 고객센터 */
+.gnbcolor{
+	height: 30px !important;
+	line-height: 30px !important;
+	font-size: 13px !important;
+	font-family: notosansdel !important;
+	margin-bottom: 10px !important;
+}
+#msub{
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	font-size: 13px;
+	font-family: notosansT;
+}
+#msub>a{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	color: #666;
+	line-height: 30px;
+	height: 40px;
+}
+/* 모바일 GNB 하단 아이콘 메뉴 */
+.mbicon{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 50px;
+	height: 210px;
+}
+.mbicon>ul{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	height: 100%;
+}
+.mbicon>ul>li{
+	flex: 1;
+	position: relative;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.mbicon>ul>li>a{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	text-align: center;
+}
+.mbicon>ul>li>a>img{
+	width: 35px;
+}
+
+/*///////////////// 모바일시 탑메뉴 영역 //////////////////*/
+#mobtm>div{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#mobtm>div>ul{
+	display: flex;
+	flex-direction: row;
+	width: 200%;
+	height: 100%;
+	line-height: 50px;
+}
+#mobtm>div>ul>li{
+	flex: 1;
+	text-align: center;
+}
+
+/*///////////////// 모바일시 상품 영역 ////////////////*/
+/* 메뉴 선택 */
+#mobP>ul{
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 50px;
+	background-color: #ddd;
+}
+#mobP>ul>li{
+	flex: 1;
+	line-height: 50px;
+	text-align: center;
+}
+.Pcolor {
+	background-color: #333;
+}
+.Pcolor>a{
+	color: #fff;
+}
+/* 상품리스트 */
+.Pbox{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	display: none;
+	overflow: hidden;
+}
+.mobPbox{
+	position: relative;
+	margin: 0 auto;
+	width: 200%;
+	height: 100%;
+}
+.mobPbox>ol{
+	width: 50%;
+	height: 100%;
+	padding: 10px 10px 55px 10px ;
+	box-sizing: border-box;
+	float: left !important;
+	/*outline: 1px solid red;*/
+}
+.mobPbox>ol>li{
+	width: 50%;
+	height: 33.333333%;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+	padding: 0 6px 15px 0;
+}
+.mobPbox>ol>li:nth-child(2){ padding: 0 0 15px 6px; }
+.mobPbox>ol>li:nth-child(4){ padding: 0 0 15px 6px; }
+.mobPbox>ol>li:nth-child(6){ padding: 0 0 15px 6px; }
+
+.mobPbox>ol>li>a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	overflow: hidden;
+	/*outline: 1px solid red;*/
+}
+.mobPbox>ol>li>a>img{
+	/*width: 100%;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+}
+/* 상품명 넣기 */
+.mobPbox>ol>li>a>p{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 15px;
+	color: #333;
+	font-family: notosansdel;
+	font-size: 10px;
+	white-space: nowrap;
+}
+.Pboxcolor { display: block; }
+/*///////////////////////// 모바일 상품 블릿 네비 ///////////////////////////////*/
+#mobbuilet{
+	position: absolute;
+	width: 100%;
+	height: 12px;
+	bottom: 25px;
+}
+#mobbuilet>ul{
+
+	position: relative;
+	margin: 0 auto;
+	width: 40px;
+	height: 100%;
+}
+#mobbuilet>ul>li{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 10px;
+	height: 10px;
+	background-color: #ddd;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#mobbuilet>ul>li:last-child{
+	right: 0;
+}
+/* 선택된 li class 주기*/
+.selmbtn{
+	background-color: #666 !important;
+}
+
+/*///////////////////////// 모바일시 회사정보 변경 ////////////////////////////*/
+#info>nav{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 100px;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+}
+#info>nav>ul{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+#info>nav>ul>li{
+	position: relative;
+	flex: 1;
+	line-height: 50px;
+	text-align: center;
+	font-family: notosansLight;
+}
+#info>nav>ul>li>a{
+	color: #fff;
+}
+#info>nav>ul>li::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 1px;
+	height: 30px;
+	background-color: #fff;
+	transform: translateY(-50%);
+}
+#info>nav>ul>li:last-child::before{
+	display: none;
+}
+
+/*//////////// 사이트,로그인 전체 박스 //////////////////////*/
+#sitelog{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 64px;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	z-index: -1;
+	box-sizing: border-box;
+}
+/* 사이트,로그인 박스 */
+#sitelog>ul{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: 64px;
+	overflow: hidden;
+	/*outline: 1px solid red;*/
+}
+/* 패밀리사이트 박스 */
+#sitelog>ul>li:first-child{
+	width: 100px;
+	height: 100%;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+	line-height: 64px;
+	text-align: center;
+	font-family: notosansLight;
+}
+/* 숨겨진 패밀리 사이트 자식들 박스 */
+#sitelog>ul>li:nth-child(2){
+	width: 0;
+	height: 63px;
+	box-sizing: border-box;
+	overflow: hidden;
+	line-height: 64px;
+	background-color: #fff;
+}
+/* a태그 글자 */
+#sitelog>ul>li:nth-child(2)>a{
+	color: #666;
+	font-size: 11px;
+	margin: 0 25px;
+}
+/* 첫번째 a태그 글자 마진 레프트 주기 */
+#sitelog>ul>li:nth-child(2)>a:first-child{
+	margin-left:45px;
+}
+/* a태그 호버시 글자 디자인 */
+#sitelog>ul>li:nth-child(2)>a:hover{
+	color: #000 !important;
+}
+/* > 박스 */
+#sitelog>ul>li:nth-child(3){
+	width: 47px;
+	height: 63px;
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+	line-height: 64px;
+	background-color: #fff;
+	text-align: center;
+}
+/* > */
+#sitelog>ul>li:nth-child(3)>a{
+	font-family: "spoqaB" !important;
+}
+/* 로그인 박스 */
+#sitelog>ul>li:last-child{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	line-height: 64px;
+	z-index: -1;
+}
+#sitelog>ul>li:last-child>a{
+	display: inline-block;
+	margin-left: 25px;
+}
+/* 더보기,검색,한샘로고 전체 박스 */
+#logobox{
+	position: relative;
+	width: 100%;
+	height: 126px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+/* 1200px 박스 */
+#logobox>ul{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	/*outline: 1px solid red;*/
+}
+/* 더보기 버튼 */
+li.plusm{
+	position: relative;
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 16px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 11;
+}
+li.plusm>span{
+	position: absolute;
+	display: block;
+	right: 0;
+	width: 20px;
+	height: 2px;
+	background-color: #333;
+}
+li.plusm>span:first-child{
+	top: 0;
+}
+li.plusm>span:nth-child(2){
+	top: 7px;
+}
+li.plusm>span:nth-child(3){
+	top: 14px;
+}
+/*겹쳐진 span*/
+li.plusm>span:nth-child(4){
+	top: 0;
+	background-color: #999;
+	z-index: 1;
+	width: 0;
+}
+li.plusm>span:nth-child(5){
+	top: 7px;
+	background-color: #999;
+	z-index: 1;
+	width: 0;
+}
+li.plusm>span:last-child{
+	top: 14px;
+	background-color: #999;
+	z-index: 1;
+	width: 0;
+}
+/* 검색 버튼 */
+#search{
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	width: 20px;
+	height: 18px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 11;
+}
+#search>div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#search>div>img{
+	width: 100%;
+}
+
+/* 검색영역 li*/
+#findbox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+	z-index: 10;
+	display: none;
+}
+/* 검색 영역 박스 */
+#fbox{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 30px;
+	transform: translateY(-50%);
+}
+/* 검색 input 태그 디자인 */
+#find{
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-align: center;
+	background-color: transparent;
+	font-family: notosansR;
+	font-size: 15px;
+}
+/* 인풋 포커스시 아웃라인 없애기 */
+#find:focus{
+	outline: none;
+}
+/* 한샘로고 이미지 넣기 */
+#logobox>ul>li:last-child{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 216px;
+	height: 19px;
+	transform: translate(-50%,-50%);
+	background: url(../image/hsrowlogo.png) no-repeat center/100%;
+}
+/* 탑 메뉴 전체 박스 */
+#tmenu{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+#tmbox{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+#tmbox>li{
+	flex: 1;
+	text-align: center;
+	font-size: 12px;
+	line-height: 60px;
+}
+/* 메뉴 a 공통 */
+#tmbox>li>a{
+	display: block;
+	font-family: notosansdel;
+	color: #333;	
+}
+/* li 호버시 하위메뉴 창 나오기 */
+#tmbox>li:first-child:hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(2):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(3):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(4):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(5):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(6):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(7):hover>.sbox{
+	height: 300px;
+}
+#tmbox>li:nth-child(8):hover>.sbox{
+	height: 300px;
+}
+/* 메인메뉴의 하위메뉴 박스 */
+.sbox{
+	position: absolute;	
+	left: 50% /*전체 중앙정렬*/;
+	transform: translateX(-50%);
+	width: 2000px;
+	height: 0;/*300px;*/
+	/*border-top: 1px solid #ddd;*/
+	background-color: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: height .4s ease-out;
+}
+/* 하위메뉴 속박스 */
+.smenu{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 100%;
+	padding: 0 50px;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+/* li 메뉴 공통*/
+.smenu>li:first-child{
+	position: relative;
+	width: 100px;
+	height: 165px;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 15px;
+}
+/* a태그 리스트 공통 */
+.smenu>li:first-child>a{
+	display: block;
+	color: #666;
+	width: 100%;
+	line-height: 15px;
+	margin-bottom: 20px;
+	font-family: spoqaL;
+}
+/* 침실 소개 글 박스 */
+.smenu>li:nth-child(2){
+	position: relative;
+	margin-left: 120px;
+	height: 220px;
+	margin-top: 40px;
+	text-align: left;
+	padding-top: 28px;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: notosansR;
+}
+/* 막대기 그리기 */
+.smenu>li:nth-child(2)::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 2px	;
+	background-color: #333;
+}
+.smenu>li:nth-child(2)>span{
+	display: block;
+	margin-top: 24px;
+	font-size: 15px;
+	line-height: 25px;
+	font-family: notosansLight;
+}
+
+.smenu>li:last-child{
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	width: 568px;
+	height: 220px;
+}
+.smenu>li:last-child>img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*////////////자녀방만 따로 디자인 주기////////////////*/
+/* 자녀방 하위메뉴 속박스 */
+.smenu2{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 100%;
+	padding: 0 50px;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+/* 자녀방 첫번째 li */
+.smenu2>li:first-child{
+	position: relative;
+	width: 100px;
+	height: 165px;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 15px;
+}
+/* 자녀방 두번째 li */
+.smenu2>li:nth-child(2){
+	position: relative;
+	width: 100px;
+	height: 165px;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 15px;
+}
+.smenu a:hover{
+	color: #000 !important;
+	font-family: notosansR !important;
+}
+.smenu2 a:hover{
+	color: #000 !important;
+	font-family: notosansR !important;
+}
+/* a태그 리스트 공통 */
+.smenu2>li:first-child>a{
+	display: block;
+	color: #666;
+	width: 100%;
+	line-height: 15px;
+	margin-bottom: 20px;
+	font-family: spoqaL;
+}
+/* a태그 리스트 공통 */
+.smenu2>li:nth-child(2)>a{
+	display: block;
+	color: #666;
+	width: 100%;
+	line-height: 15px;
+	margin-bottom: 20px;
+	font-family: spoqaL;
+}
+.smenu2>li:nth-child(2)>a>span{
+	font-family: notosansdel;
+	color: #333;
+}
+
+/* 자녀방 소개 글 박스 */
+.smenu2>li:nth-child(3){
+	position: relative;
+	margin-left: 30px;
+	height: 220px;
+	margin-top: 40px;
+	text-align: left;
+	padding-top: 28px;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: notosansR;
+}
+/* 막대기 그리기 */
+.smenu2>li:nth-child(3)::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 2px	;
+	background-color: #333;
+}
+.smenu2>li:nth-child(3)>span{
+	display: block;
+	margin-top: 24px;
+	font-size: 15px;
+	line-height: 25px;
+	font-family: notosansLight;
+}
+
+.smenu2>li:last-child{
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	width: 568px;
+	height: 220px;
+}
+.smenu2>li:last-child>img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 배너 부모 */
+#banbox{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300%;
+	height: 100%;
+	/*outline: 1px solid red;*/
+}
+/* 배너 이미지 li 박스 */
+.banimg{
+	position: relative;
+	width: 33.333333%;
+	height: 100%;
+	/*outline: 1px solid red;*/
+}
+/* 배너 이미지 */
+.banimg>img{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* 배너 텍스트 */
+.bantxt{
+	position: relative;
+	top: 50%;
+	left: 25%;
+	transform: translate(-25%,-50%);
+	width: 40%;
+	height: 360px;
+}
+/* p,a 글색 공통 */
+.bantxt>p{
+	color: #fff;
+}
+.bantxt>p:first-child{
+	font-family: spoqaL;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.bantxt>p:nth-child(2){
+	font-family: spoqaR;
+	font-size: 40px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+.bantxt>p:nth-child(2)>span{
+	line-height: 59px;
+}
+.bantxt>p:nth-child(3){
+	font-family: notosansThin;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+}
+.bantxt>a{
+	color: #fff;
+	font-family: spoqaR;
+	position: absolute;
+	margin-top: 50px;
+	width: 170px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px;
+	border: 2px solid #fff;
+}
+
+/* 블릿 박스 */
+#builetbox{
+	position: relative;
+	margin: 0 auto;
+	top: 90%;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+}
+/* 블릿 속박스 li공통*/
+#builetbox>li{
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 15px;
+	margin: 0 15px;
+	background-color: #fff;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.bcolor{
+	top: 50%;
+	transform: translateY(-50%) scaleY(1.5) !important;
+	opacity: 1 !important;
+}
+
+/*/////////////////////// 베스트 영역 박스 ////////////////////////////*/
+/* 베스트 상품 속박스 */
+#bestbox{
+	position: absolute;
+	width: 1200px;
+	height: 584px;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	transform: translate(-50%,-50%);
+}
+
+/* 업다운 이미지 넣기 */
+.up{
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	top: 0;
+	right: 36px;
+	text-align: center;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 1;
+}
+.down{
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	top: 0;
+	right: 0;
+	text-align: center;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 1;
+}
+.up img, .down img{
+	margin-bottom: 3px;
+	width: 8px;
+	height: 5px;
+}
+
+/*/////////////////////베스트 아이템 박스 ///////////////////////////////*/
+#bestbox>div{
+	position: absolute;
+	top: 62px;
+	width: 100%;
+	height: 540px;
+	overflow: hidden;
+}
+ul#bestitem{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.bestimg{
+	position: relative;
+	width: 100%;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.bestimg>a{
+	position: relative;
+	display: inline-block;
+	width: 33.333333%;
+	height: 240px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.bestimg>a:first-child{
+	padding-left: 0;
+}
+.bestimg>a:nth-child(2){
+	padding: 0 10px
+}
+.bestimg>a:last-child{
+	padding-right: 0;
+}
+.bestimg>a>img{
+	width: 100%;
+	height: 200px;
+}
+.bestimg>a>p{
+	position: absolute;
+	bottom: 0;
+}
+.bestimg>a>p>span{
+	margin-left: 20px;
+}
+
+/*/////////////////////// 신상품 영역 박스 ////////////////////////////*/
+#newbox{
+	position: relative;
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	top: 50%;
+	padding-top: 62px;
+	box-sizing: border-box;
+	transform: translateY(-50%);
+}
+/* 왼쪽 오른쪽 이동 버튼 */
+#newbox>a{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: spoqaR;
+	font-size: 20px;
+	color: #333;
+}
+.lbtn{
+	left: -40px;
+}
+.rbtn{
+	right: -40px;
+}
+/* 비율유지박스 */
+#newbox>div{
+	position: absolute;
+	width: 100%;
+	height: 338px;
+	overflow: hidden;
+}
+/* 신상품 속박스 */
+ul#newitem{
+	position: absolute;
+	left: 0;
+	width: 307.5%;
+	height: 100%;
+}
+/* 공통 li */
+.newimg{
+	display: flex;
+	width: 33.333333%;
+	height: 100%;
+}
+.newimg>a{
+	flex: 1;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+.newimg>a>img{
+	width: 100%;
+	height: 300px;
+}
+.newimg>a>p{
+	position: absolute;
+	bottom: 0;
+}
+.newimg>a>p>span{
+	margin-left: 20px;
+}
+
+/* 블릿버튼 */
+#bbtn{
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 10px;
+}
+#bbtn>ul{
+	position: relative;
+	margin: 0 auto;
+	width: 50px;
+	height: 100%;
+}
+#bbtn>ul>li{
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#bbtn>ul>li:last-child{
+	margin-right: 0;
+}
+.selbbtn{
+	background-color: #666 !important;
+}
+
+/*//////////// 한샘 세일영역  ////////////////*/
+#offbox{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1200px;
+	height: 412px;
+	margin: 0 auto;
+}
+/* 타이틀 박스 */
+#saletit{
+	width: 100%;
+	height: 62px;
+}
+#saletit>h1{
+	width: 100%;
+	line-height: 17px;
+	font-size: 22px;
+	color: #333;
+	margin-bottom: 10px;
+	font-family: notosansLight;
+}
+/* 상품 박스 */
+#dsalebox{
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+#dsalebox>ul{
+	position: absolute;
+	width: 1230px;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#dsalebox>ul>li{
+	width: 20%;
+	height: 100%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+#dsalebox>ul>li>a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+/*	outline: 1px solid red;*/
+}
+#dsalebox>ul>li:hover>a>span{
+	opacity: 1;
+}
+#dsalebox>ul>li>a::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+}
+.sopa>a::before{
+	opacity: .4 !important;
+}
+#dsalebox>ul>li>a>span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border-radius: 25px;
+	line-height: 30px;
+	background-color: #fff;
+	color: #333;
+	font-family: notosansL;
+	font-size: 13px;
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+}
+#dsalebox>ul>li>a>span:hover{
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+#dsalebox>ul>li>a>img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	z-index: -1;
+}
+#dsalebox>ul>li>div{
+	width: 100%;
+	height: 20%;
+	padding-top: 15px;
+	box-sizing: border-box;
+/*	outline: 1px solid red;*/
+}
+#dsalebox>ul>li>div>p:nth-child(1){
+	display: block;
+	font-size: 15px;
+	color: #666;
+	margin-bottom: 8px;
+	font-family: notosansR;
+}
+
+#dsalebox>ul>li>div>p:nth-child(2){
+	display: block;
+	font-size: 15px;
+	color: #333;
+	font-family: notosansR;
+}
+#dsalebox>ul>li>div>p:nth-child(2)>span{
+	display: inline-block;
+	margin-left: 20px;
+	color: #999;
+}
+/* 1150px 이하일때 스와이프 타입 레이아웃 변경 */
+.swiper-offbox{
+	display: none;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 900px;
+	height: 350px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#msaletit{
+	width: 100%;
+	height: 62px;
+}
+#msaletit>h1{
+	width: 100%;
+	line-height: 17px;
+	font-size: 22px;
+	color: #333;
+	margin-bottom: 10px;
+	font-family: notosansLight;
+}
+.swiper-offbox>div:nth-child(2){
+	position: absolute;
+	left: -15px;
+	width: 130%;
+	height: 288px;
+}
+/* li 공통 */
+.swiper-offbox>div:nth-child(2)>div{
+	width: 20%;
+	height: 100%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+/* 상품이미지 박스 */
+.swiper-offbox>div:nth-child(2)>div>a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 80%;
+	background-color: #f6f6f6;
+}
+.swiper-offbox>div:nth-child(2)>div>a>img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+}
+/* 상품 명, 가격 박스 */
+.swiper-offbox>div:nth-child(2)>div>div{
+	width: 100%;
+	height: 20%;
+	padding-top: 10px;
+	box-sizing: border-box;
+/*	outline: 1px solid red;*/
+}
+.swiper-offbox>div:nth-child(2)>div>div>p:nth-child(1){
+	display: block;
+	font-size: 15px;
+	color: #666;
+	margin-bottom: 5px;
+	font-family: notosansR;
+}
+.swiper-offbox>div:nth-child(2)>div>div>p:nth-child(2){
+	display: block;
+	font-size: 15px;
+	color: #333;
+	font-family: notosansR;
+}
+.swiper-offbox>div:nth-child(2)>div>div>p:nth-child(2)>span{
+	display: inline-block;
+	margin-left: 20px;
+	color: #999;
+}
+.swiper-offbox>div:last-child{
+	position: absolute;
+	top: 0;
+	text-align: right;
+}
+
+
+/*//////////// 한샘 라이프 전체 영역 ///////////////*/
+#hlife>div{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 1200px;
+	height: 317px;
+}
+#lifebox{
+	position: absolute;
+	width: 100%;
+	height: 255px;
+	top: 62px;
+}
+#lifebox>li{
+	position: relative;
+	width: 585px;
+	height: 100%;
+	margin-right: 30px;
+}
+#lifebox>li:last-child{
+	margin-right: 0;
+}
+#lifebox>li:first-child>a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../image/life01.png) no-repeat center/cover;
+}
+#lifebox>li:last-child>a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../image/life02.png) no-repeat center/cover;
+}
+
+/*//////////// 500px 모바일용 콘텐츠 소개 영역 //////////////*/
+.mobcont1{
+	position: relative;
+	margin: 0 auto;
+	background-color: #ddd;
+	margin-bottom: 10px;
+	width: 95%;
+	height: 530px;
+}
+.mcontimg{
+	width: 100%;
+	height: 300px;
+}
+.mcontimg>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mcontimg>a>img{
+	width: 100%;
+	height: 100%;
+}
+.mconttxt{
+	position: relative;
+	width: 100%;
+	height: 230px;
+	padding: 20px 5% 0 5%;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+/*#mconttxt::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	height: 1px;
+	background-color: #333;
+}*/
+.mconttxt>span{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	height: 30px;
+	border-radius: 30px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	background-color: #999;
+	font-family: spoqaL;
+}
+.mconttxt>div:first-child{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.mconttxt>div:first-child>p{
+	display: block;
+	font-family: spoqaL;
+	font-size: 15px;
+	color: #333;
+}
+.mconttxt>div:first-child>h1{
+	display: block;
+	font-family: spoqaB;
+	font-size: 25px;
+	color: #333;
+}
+.mconttxt>div:first-child>h1>span{
+	display: inline-block;
+	font-family: spoqaR;
+	color: #999;
+}
+.mconttxt>div:nth-child(2){
+	position: relative;
+	width: 100%;
+	font-size: 15px;
+}
+.mconttxt>div:nth-child(2)>p{
+	display: block;
+	font-family: spoqaR;
+	color: #333;
+}
+
+
+/*//////////// 한샘 리뷰 전체 영역 ///////////////*/
+#hrbox{
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	width: 1200px;
+	height: 558px;
+	padding-top: 62px;
+	box-sizing: border-box;
+	transform: translateY(-50%);
+}
+#reviewbox{
+	position: absolute;
+	width: 100%;
+	height: 496px;
+	top: 62px;
+}
+#reviewbox>li{
+	position: relative;
+	width: 100%;
+	height: 233px;
+	margin-bottom: 30px;
+}
+#reviewbox>li:last-child{
+	margin-bottom: 0;
+}
+/* 첫번째 li 가상요소로 상단 막대기 넣기 */
+#reviewbox>li:first-child::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 330px;
+	height: 2px;
+	background-color: #333;
+}
+/* 두번째li 가상요소로 갈색박스 넣기 */
+/*
+#reviewbox>li:last-child::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 330px;
+	height: 100%;
+	background-color: #d1c0a5;
+}
+*/
+
+/* 작은 소개글 */
+#reviewbox>li:first-child>h1{
+	position: absolute;
+	top: 26px;
+	left: 1px;
+	font-size: 15px;
+	font-family: notosansLight;
+}
+/* 큰 소개글 */
+#reviewbox>li:first-child>h2{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	font-size: 40px;
+}
+#reviewbox>li:first-child>h2>span{
+	font-family: notosansB;
+}
+/* 윗 리뷰 사진 속박스 */
+.resmall{
+	position: absolute;
+	right: 0;
+	width: 840px;
+	height: 100%;
+}
+.resmall>li{
+	position: relative;
+	width: 260px;
+	height: 100%;
+	margin-right: 30px;
+}
+
+.resmall>li:last-child{
+	margin-right: 0;
+}
+.resmall>li img{
+	position: absolute;
+	width: 100%;
+	transition: all .3s ease-out;
+}
+.resmall>li>a:hover img{
+	transform: scale(1.1);
+	transition: all .3s ease-out;
+}
+.resmall>li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.resmall>li>a::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .3s ease-out;
+	background-color: #000;
+	opacity: 0;
+}
+.recolor::after{
+	opacity: .5 !important;
+}
+
+/* 아래 리뷰 사진 속박스 */
+.resmall2{
+	position: absolute;
+	left: 30%;
+	width: 840px;
+	height: 100%;
+}
+.resmall2>li{
+	position: relative;
+	width: 260px;
+	height: 100%;
+	margin-right: 30px;
+}
+.resmall2>li:last-child{
+	margin-right: 0;
+}
+.resmall2>li img{
+	position: absolute;
+	width: 100%;
+	transition: all .3s ease-out;
+}
+.resmall2>li>a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.resmall2>li>a::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .3s ease-out;
+	background-color: #000;
+	opacity: 0;
+}
+.recolor::after{
+	opacity: .5 !important;
+}
+.resmall2>li>a:hover img{
+	transform: scale(1.1);
+	transition: all .3s ease-out;
+}
+/*//////////// 한샘 아이콘 전체 영역 ///////////////*/
+#hicon>div{
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1200px;
+	padding: 0 50px;
+	height: 187px;
+	box-sizing: border-box;
+}
+/* 아이콘 속 박스*/
+#iconbox{
+	width: 100%;
+	height: 100%;
+}
+/* li 공통 */
+#iconbox li{
+	position: relative;
+	width: 150.5px;
+	height: 100%;
+	margin-right: 166px;
+	text-align: center;
+	font-size: 14px;
+}
+#iconbox li:last-child{
+	margin-right: 0;
+}
+#iconbox h1{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	white-space: nowrap;
+}
+
+#iconbox a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 150.5px;
+	border-radius: 50%;
+	border: 1px solid #666;
+	box-sizing: border-box;
+}
+#iconbox img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all .2s;
+	width: 50%;
+}
+
+/*//////////// 한샘 전체메뉴 전체 영역 ///////////////*/
+#hmenu>div{
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	transform: translateY(-50%);
+	width: 1200px;
+	height: 240px;
+	font-size: 15px;
+}
+#hmenu>div>h1{
+	font-family: notosansbold;
+}
+#hmbox{
+	position: relative;
+	top: 62px;
+	width: 100%;
+	height: 178px;
+	/*outline: 1px solid red;*/
+}
+#hmbox>li{
+	position: relative;
+	height: 100%;
+}
+#hmbox>li:first-child{
+	width: 555px;
+}
+#hmbox>li:nth-child(2){
+	width: 560px;
+}
+#hmbox>li:last-child{
+	width: 85px;
+}
+ol.camenu{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+ol.camenu>li{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	padding-left: 100px;
+	box-sizing: border-box;
+	line-height: 35.59px;
+}
+ol.camenu>li>h1{
+	position: absolute;
+	left: 0;
+	width: 100px;
+}
+ol.camenu>li>a{
+	position: relative;
+	font-family: notosansdel;
+	color: #666;
+	font-size: 12px;
+	margin-right: 10px;
+}
+ol.camenu>li>a>span{
+	font-family: notosansR;
+}
+
+/*//////////// 한샘 회사정보 전체 영역 ///////////////*/
+/* 인스타, 페북, 블로그 아이콘 */
+#infobox{
+	position: relative;
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+}
+#infobox>div{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: auto;
+	height: 30px;
+}
+#infobox>div>a{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+#infobox>div>a>img{
+	height: 24px;
+	line-height: 6px;
+}
+#infobox>div>a:last-child>img{
+	height: 30px;
+}
+/* 밑 박스 */
+#infocont{
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	width: 1200px;
+	height: 172px;
+}
+/* 로고 */
+#infocont>div{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding-right: 15px;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+#infocont>div:first-child>a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+}
+#infocont>div:first-child>a>img{
+	width: 230px;
+}
+/* 회사 정보 */
+#infotxt{
+	position: absolute;
+	top: 65px;
+	width: 100%;
+	height: 107px;
+}
+#infotxt>li{
+	width: 100%;
+	height: 25%;
+	line-height: 26.75px;
+	font-size: 13px;
+}
+/* 첫번째 - 개인정보처리방침 */
+#infotxt>li>a{
+	color: #fff;
+	font-family: notosanslight;
+	padding: 0 10px;
+}
+#infotxt>li>a:first-child{
+	padding-left: 0;
+}
+#infotxt>li>a>span{
+	font-family: notosansR !important;
+}
+#infotxt>li:last-child>a{
+	color: #ccc;
+}
+
+/* 플래그샵 */
+#infocont>div:last-child{
+	padding-right: 0;
+	padding-left: 15px;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+#infocont>div:last-child>h1{
+	line-height: 20px;
+	font-size: 25px;
+	color: #fff;
+	font-family: notosansbold;
+}
+#infocont>div:last-child>h1>span{
+	font-family: notosansLight;
+}
+#hpshop{
+	position: absolute;
+	top: 65px;
+	width: 585px;
+	height: 79px;
+	/*outline: 1px solid red;*/
+}
+#hpshop>li{
+	position: relative;
+	width: 33.333333%;
+	height: 100%;
+	font-size: 13px;
+	font-family: notosansLight;
+	/*outline: 1px solid red;*/
+}
+#hpshop>li:nth-child(2){
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+#hpshop>li:last-child{
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+#hpshop>li>a{
+	display: block;
+	width: 100%;
+	line-height: 26.32px;
+	height: 33.333333%;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+

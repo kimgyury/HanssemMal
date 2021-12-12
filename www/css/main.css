@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* 2차포트폴리오 - Main CSS */
+
+@import url("common.css");
+@import url("core.css");
+@import url("media.css");
+
+/* 전체부모 */
+#wrap{
+	position: relative;
+	max-width: 2000px;/*최대폭 1200px이므로 1200px보다 커지면 100%로 적용되지 않는다.*/
+	min-width: 200px;
+	width: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+/* 모바일메뉴 나올때 검정 배경 */
+#mobbg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+	z-index: 10;
+	display: none;
+}
+/*  모바일메뉴 */
+#mobgnb{
+	position: fixed;
+	width: 350px;
+	left: -350px;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #fff;
+	z-index: 11;
+}
+/* 탑 영역 전체 */
+#top{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;	
+	height: 250px;
+	border-bottom: 1px solid #ddd;
+	z-index: 5;
+	box-shadow: 0 2px 10px #333;
+}
+/* 모바일 탑메뉴 */
+#mobtm{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-top: 2.5px solid #f6f6f6;
+	background-color: #fff;
+	display: none;
+}
+/* 배너 영역 전체 */
+#banner{
+	position: relative;
+	margin: 0 auto;
+	max-width: 2000px;
+	height: 500px;
+	overflow: hidden;
+}
+/* 모바일 버전 배너 영역 전체 */
+#mobbanner{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	display: none;
+}
+/* 모바일 베스트,신상품 선택 탭 영역 */
+#mobP{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	margin-bottom: 20px;
+	display: none;
+	box-shadow: 1px 1px 5px #ddd;
+	background-color: #fff;
+}
+#mobNB{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+	border-bottom: 5px solid #f6f6f6;
+	display: none;
+	background-color: #fff;
+}
+/*모바일 베스트영역*/
+#mobbest{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+}
+/*모바일 베스트영역*/
+#mobnew{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	opacity: 0;
+	z-index: -1;
+}
+/* 모바일 전시상품 영역 */
+#mobsale{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 430px;
+	display: none;
+}
+/* 모바일용 콘텐트 소개 영역 */
+#mobcont{
+	position: relative;
+	margin: 0 auto;
+	border-top: 10px solid #f6f6f6; 
+	width: 100%;
+	height: 1080px;
+	display: none;
+	background-color: #f6f6f6;
+}
+
+/* 베스트 영역 전체 */
+#bestP{
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	height: 784px;
+}
+
+/* 신상품 영역 전체 */
+#newA{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 600px;
+	background-color: #f6f6f6;
+	box-shadow: 0 7px 20px #ededed inset, 0 -7px 20px #f1f1f1 inset;
+}
+
+/* 전시상품 세일 영역 전체 */
+#dsaleP{
+	margin: 0 auto;
+	width: 100%;
+	height: 612px;
+	background-color: #fff;
+}
+
+/* 한샘라이프 영역 전체 */
+#hlife{
+	margin: 0 auto;
+	width: 100%;
+	height: 517px;
+	background-color: #f6f6f6;
+	box-shadow: 0 7px 20px #ededed inset, 0 -7px 20px #f1f1f1 inset;
+}
+
+/* 한샘 리뷰 영역 전체 */
+#hreview{
+	margin: 0 auto;
+	width: 100%;
+	height: 758px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+/* 한샘 아이콘 메뉴 영역 */
+#hicon{
+	margin: 0 auto;
+	width: 100%;
+	height: 387px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+/* 카테고리 전체 영역 */
+#hmenu{
+	margin: 0 auto;
+	width: 100%;
+	height: 440px;
+}
+
+/* 회사 정보 전체 영역 */
+#info{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 461px;
+	background-color: #333;
+}
+/*가상요소로 흰색 막대기 만들기*/
+#info::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 70px;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
